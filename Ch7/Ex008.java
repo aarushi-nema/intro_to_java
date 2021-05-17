@@ -38,7 +38,7 @@ public class Ex8 {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the array: ");
         for(int i=0; i<array.length; i++){
-            array[i]=sc.nextInt();
+            array[i]=sc.nextDouble();
         }
     }
 
