@@ -28,7 +28,7 @@ public class Ex9 {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter 10 elements of the array: ");
         for(int i=0; i<array.length; i++){
-            array[i]= sc.nextInt();
+            array[i]= sc.nextDouble();
         }
     }
 
