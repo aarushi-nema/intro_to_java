@@ -1,5 +1,10 @@
 package Ch7;
 
+/*
+    Q: Write a program that passes a string to the command line and displays the number of uppercase letters in the 
+    string.
+ */
+
 import static java.lang.Character.isUpperCase;
 
 public class Ex22 {
