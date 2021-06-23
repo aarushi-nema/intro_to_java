@@ -28,7 +28,8 @@ package Ch9;
  * Created by aarushi on 23/6/21.
  */
 public class Ex11LinearEquation {
-
+    
+    /*Private data fields a, b, c, d, e, and f*/
     private double a;
     private double b;
     private double c;
@@ -36,6 +37,7 @@ public class Ex11LinearEquation {
     private double e;
     private double f;
 
+    /*A constructor with the arguments for a, b, c, d, e, and f*/
     public Ex11LinearEquation(double a, double b, double c, double d, double e, double f){
         this.a= a;
         this.b= b;
@@ -45,6 +47,7 @@ public class Ex11LinearEquation {
         this.f= f;
     }
 
+    /*Six getter methods for a, b, c, d, e, and f*/
     public double getA() {
         return a;
     }
@@ -69,10 +72,12 @@ public class Ex11LinearEquation {
         return f;
     }
 
+    /*A method named isSolvable() that returns true if ad−bc is not 0*/
     public boolean isSolvable(){
         return a*d - b*c != 0;
     }
 
+    /*Methods getX() and getY() that return the solution for the equation.*/
     public double getX(){
         return (e*d - b*f)/(a*d - b*c);
     }
