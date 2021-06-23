@@ -22,16 +22,19 @@ package Ch9;
  */
 public class Ex10QuadraticEquations {
 
+    /*Private data fields a , b , and c that represent three coefficients.*/
     private double a;
     private double b;
     private double c;
 
+    /*A constructor with the arguments for a , b , and c*/
     public Ex10QuadraticEquations(double a, double b, double c){
         this.a=a;
         this.b=b;
         this.c=c;
     }
 
+    /*Three getter methods for a , b , and c .*/
     public double getA(){
         return a;
     }
@@ -44,10 +47,12 @@ public class Ex10QuadraticEquations {
         return c;
     }
 
+    /*A method named getDiscriminant() that returns the discriminant, which is b2−4ac*/
     public double getDiscriminant(){
         return (Math.pow(b,2)-(4*a*c));
     }
 
+    /*The methods named getRoot1() and getRoot2() for returning two roots of the equation*/
     public double getRoot1(){
         double discriminant= getDiscriminant();
         if(discriminant<0){
