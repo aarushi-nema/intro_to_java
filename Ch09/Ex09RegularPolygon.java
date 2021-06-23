@@ -35,6 +35,7 @@ public class Ex09RegularPolygon {
     private double x; //x-coordinate of center of polygon
     private double y; //y-coordinate of center of polygon
 
+    /*A no-arg constructor that creates a regular polygon with default values*/
     public Ex09RegularPolygon(){
         n=3;
         side=1;
@@ -42,6 +43,7 @@ public class Ex09RegularPolygon {
         y=0;
     }
 
+    /*A constructor that creates a regular polygon with the specified number of sides and length of side, centered at ( 0 , 0 ).*/
     public Ex09RegularPolygon(int n, double side){
         this.n=n;
         this.side= side;
@@ -49,6 +51,7 @@ public class Ex09RegularPolygon {
         y=0;
     }
 
+    /*A constructor that creates a regular polygon with the specified number of sides, length of side, and x- and y-coordinates.*/
     public Ex09RegularPolygon(int n, double side, double x, double y){
         this.n=n;
         this.side=side;
@@ -56,6 +59,7 @@ public class Ex09RegularPolygon {
         this.y=y;
     }
 
+    /*The accessor and mutator methods for all data fields.*/
     public int getN(){
         return n;
     }
@@ -88,10 +92,12 @@ public class Ex09RegularPolygon {
         this.y = y;
     }
 
+    /*The method getPerimeter() that returns the perimeter of the polygon*/
     public double getPerimeter(){
         return n*side;
     }
 
+    /*The method getArea() that returns the area of the polygon. The formula for computing the area of a regular polygon*/
     public double getArea(){
         return (n*Math.pow(side, 2))/(4*Math.tan(Math.PI/n));
     }
